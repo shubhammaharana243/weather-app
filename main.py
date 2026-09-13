@@ -33,8 +33,8 @@ def weathe():
         else:
             print("City: ",city)
             
-            print(f"🌡️ Temperature: {data["main"]["temp"]-273.15}°C")
-            print(f"🤒 Feels like: {data["main"]["feels_like"]-273.15}°C")
+            print(f"🌡️ Temperature: {(data["main"]["temp"]-273.15):.2f}°C")
+            print(f"🤒 Feels like: {(data["main"]["feels_like"]-273.15):.2f}°C")
             print(f"💧 Humidity: {data["main"]['humidity']}%")
             print(f"🫳 Pressure: {data["main"]["pressure"]}hPa / mb")
             print(f"☁️ Condition: {data["weather"][0]["description"]}")
