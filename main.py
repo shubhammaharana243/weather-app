@@ -4,7 +4,7 @@ import requests
 
 load_dotenv()
 
-def weathe():
+def weather():
     city = input("Enter City: ")
     print("---------------------")
     not_found={"cod":"404","message":"city not found"}
@@ -45,11 +45,11 @@ def weathe():
         print("Please connect your internet")
 
 print("\n=== Welcome to my Weather App===\n")
-weathe()
+weather()
 while True:
     loo = input("\nWant to check another city's weather:(Y/N) ")
     if loo.lower()=="y":
-        weathe()
+        weather()
     elif loo.lower()=="n":
         break
     else:
